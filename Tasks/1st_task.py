@@ -31,7 +31,7 @@ def mse_loss(X, y, theta):
 # -----------------------------
 # Batch Gradient Descent
 # -----------------------------
-def batch_gd(X, y, lr=0.01, epochs=100):
+def batch_gd(X, y, lr=0.01, epochs=1000):
     m, n = X.shape
     theta = np.zeros(n)
 
@@ -52,7 +52,7 @@ def batch_gd(X, y, lr=0.01, epochs=100):
 # -----------------------------
 # Stochastic Gradient Descent
 # -----------------------------
-def stochastic_gd(X, y, lr=0.01, epochs=10):
+def stochastic_gd(X, y, lr=0.01, epochs=100):
     m, n = X.shape
     theta = np.zeros(n)
 
@@ -79,7 +79,7 @@ def stochastic_gd(X, y, lr=0.01, epochs=10):
 # -----------------------------
 # Mini-Batch Gradient Descent
 # -----------------------------
-def mini_batch_gd(X, y, batch_size=64, lr=0.01, epochs=100):
+def mini_batch_gd(X, y, batch_size=64, lr=0.01, epochs=1000):
     m, n = X.shape
     theta = np.zeros(n)
 
