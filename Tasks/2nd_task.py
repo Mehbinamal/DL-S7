@@ -31,7 +31,7 @@ print(f"Test samples: {x_test.shape[0]}")
 
 #Step B : Fn To build model
 def build_model():
-    model = keras.sequential([
+    model = keras.Sequential([
         layers.Input(shape=(784,)),
         layers.Dense(128, activation="relu"),   # single hidden layer, ReLU
         layers.Dense(10, activation="softmax")  # output layer, softmax over 10 classes
